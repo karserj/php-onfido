@@ -1,0 +1,34 @@
+{
+  "name": "karserj/php-onfido",
+  "type": "library",
+  "description": "Composer version of onfido/php-onfido",
+  "keywords": [
+    "karserj",
+    "php-onfido"
+  ],
+  "homepage": "https://github.com/karserj/php-onfido",
+  "require": {
+    "php": "~5.5|~7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "karserj/php-onfido": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "karserj/php-onfido": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
