@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Onfido;
-
 
 class Request
 {
@@ -78,7 +76,7 @@ class Request
         } else {
             if ($this->method === 'GET') {
                 $params['page'] = Config::init()->page;
-                $params['per_page'] = Config::init()->per_page;
+                $params['per_page'] = Config::init()->perPage;
 
                 $url_params = '?';
 

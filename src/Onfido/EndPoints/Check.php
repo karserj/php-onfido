@@ -1,7 +1,8 @@
 <?php
 
-namespace Onfido;
+namespace Onfido\EndPoints;
 
+use Onfido\Request;
 
 class Check
 {
@@ -21,7 +22,7 @@ class Check
             'GET', 'applicants/'.$applicant_id.'/checks'.($check_id !== null ? '/'.$check_id : '')
         )
         )->send($this);
-
+        
         return $check_id !== null ? $response : $response->checks;
     }
 

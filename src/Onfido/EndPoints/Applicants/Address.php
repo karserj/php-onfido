@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Onfido;
+namespace Onfido\EndPoints\Applicants;
 
 
 class Address

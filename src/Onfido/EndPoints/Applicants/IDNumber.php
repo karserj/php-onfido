@@ -1,6 +1,6 @@
 <?php
 
-namespace Onfido\Applicant;
+namespace Onfido\EndPoints\Applicants;
 
 class IDNumber
 {

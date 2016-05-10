@@ -1,15 +1,13 @@
 <?php
 
-
 namespace Onfido;
-
 
 class Config
 {
     public $token = '';
     public $version = '1';
     public $page = 1;
-    public $per_page = 20;
+    public $perPage = 20;
     public $debug;
 
     public static $instance;
@@ -28,28 +26,28 @@ class Config
         return static::$instance;
     }
 
-    public function set_token($token)
+    public function setToken($token)
     {
         $this->token = $token;
 
         return $this;
     }
 
-    public function set_version($version)
+    public function setVersion($version)
     {
         $this->version = $version;
 
         return $this;
     }
 
-    public function paginate($page = null, $per_page = null)
+    public function paginate($page = null, $perPage = null)
     {
         if ($page !== null) {
             $this->page = $page;
         }
 
-        if ($per_page !== null) {
-            $this->per_page = $per_page;
+        if ($perPage !== null) {
+            $this->perPage = $perPage;
         }
 
         return $this;

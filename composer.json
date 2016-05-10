@@ -14,8 +14,8 @@
     "phpunit/phpunit": "4.*"
   },
   "autoload": {
-    "psr-4": {
-      "Onfido": "./"
+    "psr-0": {
+      "Onfido": "src"
     }
   }
 }

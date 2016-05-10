@@ -1,6 +1,6 @@
 <?php
 
-namespace Onfido\Check;
+namespace Onfido\EndPoints\Check;
 
 class CheckReport
 {

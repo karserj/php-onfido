@@ -1,8 +1,9 @@
 <?php
 
 
-namespace Onfido;
+namespace Onfido\EndPoints;
 
+use Onfido\Request;
 
 class Report
 {

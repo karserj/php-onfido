@@ -1,6 +1,8 @@
 <?php
 
-namespace Onfido;
+namespace Onfido\EndPoints;
+
+use Onfido\Request;
 
 class Applicant
 {
@@ -16,7 +18,6 @@ class Applicant
     public function get($applicant_id = null)
     {
         $response = (new Request('GET', 'applicants'.($applicant_id !== null ? '/'.$applicant_id : '')))->send($this);
-
         if ($applicant_id !== null) {
             return $response;
         } else {
