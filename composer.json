@@ -15,20 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "karserj/php-onfido": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "karserj/php-onfido": "tests"
-    }
-  },
-  "scripts": {
-    "test": "phpunit"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
+      "Onfido": "./"
     }
   }
 }
